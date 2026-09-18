@@ -1,0 +1,245 @@
+/* ===========================
+   DRISHTI SETU PAGE STYLES
+   =========================== */
+
+/* Hero */
+.ds-hero {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.ds-hero__container {
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+  max-width: 900px;
+}
+
+.ds-hero__badge {
+  display: inline-block;
+  font-size: var(--text-xs);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-accent);
+  margin-bottom: var(--space-2xl);
+  padding: var(--space-xs) var(--space-md);
+  border: 1px solid var(--color-accent-dim);
+  border-radius: 2px;
+}
+
+.ds-hero__title {
+  font-family: var(--font-display);
+  font-size: var(--text-5xl);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-xl);
+}
+
+.ds-hero__title--accent {
+  color: var(--color-accent);
+}
+
+.ds-hero__subtitle {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 300;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-lg);
+  font-style: italic;
+}
+
+.ds-hero__tagline {
+  font-size: var(--text-lg);
+  color: var(--color-text-tertiary);
+  max-width: 520px;
+  line-height: 1.7;
+}
+
+/* About / Vision */
+.ds-about__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4xl);
+  align-items: start;
+}
+
+.ds-about__text {
+  font-size: var(--text-lg);
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+  margin-top: var(--space-xl);
+}
+
+.ds-about__text em {
+  color: var(--color-accent);
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* Content Pillars */
+.ds-pillars {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.ds-pillar {
+  display: flex;
+  gap: var(--space-lg);
+  padding: var(--space-xl);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  transition: border-color var(--duration-normal) var(--ease-out);
+}
+
+.ds-pillar:hover {
+  border-color: var(--color-accent-dim);
+}
+
+.ds-pillar__icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ds-pillar__title {
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.ds-pillar__desc {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+/* Social Links */
+.ds-social__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+  margin-top: var(--space-3xl);
+}
+
+.ds-social__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  padding: var(--space-xl) var(--space-2xl);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  transition: border-color var(--duration-normal) var(--ease-out),
+              background var(--duration-normal) var(--ease-out);
+}
+
+.ds-social__item:hover {
+  border-color: var(--platform-color, var(--color-accent));
+  background: var(--color-bg-elevated);
+}
+
+.ds-social__platform {
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  min-width: 100px;
+}
+
+.ds-social__handle {
+  font-size: var(--text-sm);
+  color: var(--color-text-tertiary);
+  flex: 1;
+}
+
+.ds-social__item svg {
+  color: var(--color-text-muted);
+  transition: color var(--duration-fast) var(--ease-out),
+              transform var(--duration-fast) var(--ease-out);
+}
+
+.ds-social__item:hover svg {
+  color: var(--platform-color, var(--color-accent));
+  transform: translate(2px, -2px);
+}
+
+/* CTA */
+.ds-cta__container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ds-cta__title {
+  font-size: var(--text-3xl);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-lg);
+}
+
+.ds-cta__text {
+  font-size: var(--text-lg);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-2xl);
+  max-width: 460px;
+}
+
+.ds-cta__button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-bg);
+  background: var(--color-accent);
+  padding: var(--space-md) var(--space-2xl);
+  border-radius: 3px;
+  transition: background var(--duration-fast) var(--ease-out),
+              transform var(--duration-fast) var(--ease-out);
+}
+
+.ds-cta__button:hover {
+  background: var(--color-accent-dim);
+  transform: translateY(-2px);
+}
+
+.ds-cta__button svg {
+  transition: transform var(--duration-fast) var(--ease-out);
+}
+
+.ds-cta__button:hover svg {
+  transform: translateX(4px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ds-hero__container {
+    padding-top: 8rem;
+  }
+
+  .ds-about__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .ds-social__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ds-social__item {
+    padding: var(--space-lg);
+  }
+}
